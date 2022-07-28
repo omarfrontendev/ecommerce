@@ -1,0 +1,76 @@
+.theme_settings {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background-color: #FFF;
+  z-index: 1;
+  width: 0;
+  transition: .2s ease-in-out;
+  opacity: 0;
+}
+.theme_settings.active {
+  opacity: 1;
+  width: 300px;
+}
+.theme__settings__content {
+  padding: 20px;
+}
+.theme-box {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(245, 245, 245);
+  margin-bottom: 30px;
+}
+.theme__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.theme-box > p {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+.theme__header button {
+  opacity: .5;
+  font-size: 18px;
+}
+.theme__header button svg {
+  display: block;
+}
+.theme__header button:hover {
+  opacity: 1;
+}
+.theme__option-input {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.theme__option-input input,
+.theme__option-input label {
+  cursor: pointer;
+}
+.theme__option-input label {
+  font-size: 14px;
+  font-weight: 500;
+}
+.colors {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 10px;
+  margin-top: 20px;
+}
+.colors button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.colors button svg {
+  color: #FFF;
+  font-size: 20px;
+}

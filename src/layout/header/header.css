@@ -1,0 +1,95 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.menu__tooltip {
+  display: flex;
+}
+.menu__btn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+.menu__btn span {
+  width: 20px;
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--main-color);
+  transition: .3s ease-in-out;
+}
+.menu__btn.close__menu span:nth-child(2) {
+  opacity: 0;
+}
+.menu__btn.close__menu span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+} 
+.menu__btn.close__menu span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+} 
+.menu__btn svg {
+  display: block;
+  font-size: 18px;
+}
+/* ============= */
+.nav__buttons {
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav__btn,
+.nav__btn button {
+  position: relative;
+}
+.nav__btn button::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+}
+.nav__btn:nth-child(3) button:after {
+  background-color: #fbc02d;
+}
+.nav__btn:last-child button::after,
+.nav__btn:first-child button:after {
+  display: none;
+}
+.nav__btn > div {
+  display: flex;
+}
+.nav__btn svg {
+  color: var(--main-color);
+  font-size: 18px;
+}
+.user__button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 6px;
+}
+.user__button img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.user__button p {
+  color: #ababab;
+  font-weight: 400;
+  font-size: 14px;
+}
+.user__button p span {
+  font-weight: 600;
+}
+.user__button svg {
+  transition: .3s ease-in-out;
+  color: #333;
+}
+svg.rotate {
+  transform: rotate(180deg);
+}

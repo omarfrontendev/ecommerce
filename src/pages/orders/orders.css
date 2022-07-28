@@ -1,0 +1,29 @@
+.orders__page {
+  padding: 30px;
+  background-color: #FFF;
+  border-radius: 20px;
+}
+.orders__page img {
+  width: 80px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.orders__page .e-templatecell button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #FFF;
+  text-transform: capitalize;
+}
+.orders__page .e-rowcell {
+  color: #878787!important;
+  font-weight: 500;
+}
+@media(max-width: 991px) {
+  .orders__page {
+    padding: 20px;
+  }
+  .title_page h2 {
+    font-size: 28px;
+  }
+}

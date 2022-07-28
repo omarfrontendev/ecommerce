@@ -1,0 +1,19 @@
+#preview {
+  width: 90%;
+  height: 100px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.palletes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 40px;
+  margin-top: 40px;
+}
+.palletes p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}

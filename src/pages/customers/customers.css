@@ -1,0 +1,33 @@
+.customers__page .image  {
+  display: flex;
+  align-items: center;
+  width: auto;
+  column-gap: 4px;
+}
+.customers__page .image img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.customers__page .image > div {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 400;
+}
+.customers__page .text-gray-700.capitalize {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  justify-content: center;
+}
+.customers__page .rounded-full  {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+/* .customers__page .e-grid .e-headercell,
+.customers__page .e-grid .e-rowcell {
+  padding: 10px !important;
+} */

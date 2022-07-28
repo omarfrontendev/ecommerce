@@ -1,0 +1,14 @@
+.employees__page img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.employees__page .e-rowcell .flex.items-center.gap-2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+.employees__page .e-rowcell:first-child .flex.items-center.gap-2 {
+  justify-content: flex-start;
+}

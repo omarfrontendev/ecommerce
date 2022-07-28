@@ -1,0 +1,128 @@
+.sidebar {
+  width: 0%;
+  overflow: hidden;
+  min-height: 100vh;
+  transition: .3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  z-index: 10000;
+  flex-shrink: 0;
+}
+.sidebar.active {
+  width: 300px;
+}
+.sidebar > div {
+  transition: .3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 4px 0px 12px -2px #7a7a7a18;
+  overflow-y: scroll;
+}
+.sidebar > div::-webkit-scrollbar-thumb {
+  display: none;
+}
+.sidebar > div:hover::-webkit-scrollbar-thumb {
+  display: block;
+}
+.sidebar.active > div {
+  width: 300px;
+}
+/* ============================ */
+.sidebar__content {
+  width: 100%;
+  padding: 20px 10px 20px 24px;
+}
+.sidebar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.sidebar__header .logo {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: -.4px;
+}
+.sidebar__header .logo svg {
+  font-size: 20px;
+}
+/* .sidebar .close__btn {
+  display: none;
+} */
+.sidebar .close__btn svg {
+  font-size: 18px;
+  display: block;
+}
+.sidebar__menu {
+  margin-top: 20px;
+}
+.sidebar__menu > div:not(:last-child) {
+  margin-bottom: 24px;
+}
+.sidebar__menu p {
+  opacity: 1;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.sidebar__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.sidebar__links a {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 10px 0 10px 14px;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #535050;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: .3s ease-in-out;
+}
+.sidebar__links a.active__link:hover,
+.sidebar__links a.active__link {
+  background-color: var(--main-color);
+  color: #FFF;
+  /* margin-left: 24px; */
+}
+.sidebar__links a:hover {
+  background-color: #4dd0e126;
+  color: #7e7b7b;
+}
+.sidebar__links a svg {
+  display: block;
+}
+@media(max-width: 1199px) {
+  .sidebar.active > div,
+  .sidebar.active {
+    width: 240px;
+  }
+}
+@media(max-width: 767px) {
+  .sidebar.active > div,
+  .sidebar.active {
+    width: 180px;
+  }
+  .sidebar__header .logo{
+    font-size: 16px;
+  }
+}
+@media(max-width: 574px) {
+  .sidebar {
+    position: fixed;
+  }
+  .sidebar.active > div,
+  .sidebar.active {
+    width: 100vw;
+  }
+}

@@ -49,6 +49,7 @@
   font-size: 18px;
   font-weight: bolder;
   letter-spacing: -.4px;
+  cursor: pointer;
 }
 .sidebar__header .logo svg {
   font-size: 20px;

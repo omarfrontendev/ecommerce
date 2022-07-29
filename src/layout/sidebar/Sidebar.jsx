@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { SiShopware } from 'react-icons/si'
 import { MdOutlineCancel } from 'react-icons/md'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 import { links } from '../../data/dummy'
 
@@ -9,7 +9,8 @@ import './sidebar.css'
 
 const Sidebar = ({ setState, state }) => {
 
-  const [screenSize, setScreenSize] = useState(undefined)
+  const [screenSize, setScreenSize] = useState(undefined);
+  const navigate = useNavigate()
 
   const screenResize = () => {
     setScreenSize(window.innerWidth)
@@ -44,7 +45,7 @@ const Sidebar = ({ setState, state }) => {
       <div>
         <div className="sidebar__content">
           <div className="sidebar__header">
-            <div className="logo">
+            <div className="logo" onClick={() => navigate('/ecommerce')}>
               <SiShopware />Shoppy
             </div>
             <TooltipComponent position='BottomCenter' content='Close'>
